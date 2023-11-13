@@ -1,0 +1,83 @@
+/* Apply some basic styling to the body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Style the header (h1) at the top */
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Style the form container (table) in the middle */
+table {
+  width: 150%; /* Increase the width to 80% */
+  max-width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the image (icon.jpg) at the top of the table */
+table img {
+  display: block;
+  margin: 0 auto;
+  width: 100px; /* Adjust the width as needed */
+  margin-bottom: 10px;
+}
+
+/* Style the form input fields and labels */
+td {
+  padding: 5px;
+  text-align: right;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Style the login button */
+input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Change the hover effect on the login button */
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Style the "Create account" link */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Change the hover effect on the "Create account" link */
+a:hover {
+  text-decoration: underline;
+}
+
+/* Center the error message text and color it red */
+h3 {
+  text-align: center;
+  color: red;
+}

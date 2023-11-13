@@ -1,0 +1,29 @@
+{% extends 'adminnavbar.html' %}
+{% load static %}
+{% block content %}
+<h3 align="center" style="color:green" >{{ msg }}</h3>
+<h2 align="center"> Add Course Details </h2>
+<link href="{% static 'css/addcourse.css' %}" rel="stylesheet">
+<form action="add_course" method="POST">
+  {% csrf_token %}
+  <table align="center">
+    <tr>
+      <td>CourseName : </td>
+      <td><input type="text" name="txtCourseName"></td>
+    </tr>
+    <tr>
+      <td>CourseDuration : </td>
+      <td><input type="text" name="txtCourseDuration"></td>
+    </tr>
+    <tr>
+      <td>CourseFees : </td>
+      <td><input type="text" name="txtCourseFees"></td>
+    </tr>
+    <tr>
+      <td align="center" colspan="2">
+        <input type="submit" name="btnSub" value="AddCourse">
+      </td>
+    </tr>
+  </table>
+</form>
+{% endblock %}

@@ -1,0 +1,48 @@
+/* updatecourse.css */
+
+/* Center the form on the page */
+form {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Style the table within the form */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Style the table cells */
+table td {
+    padding: 10px;
+}
+
+/* Style the input fields */
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Center the form submission button */
+table tr:last-child td {
+    text-align: center;
+}

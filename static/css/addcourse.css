@@ -1,0 +1,80 @@
+/* Apply styling to the body */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5; /* Light gray background color */
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the header (h2) for the "Add Course Details" page */
+h2 {
+  text-align: center;
+  color: #007bff; /* Blue color for the header text */
+  font-size: 28px; /* Larger font size */
+  margin-top: 20px; /* Increased top margin */
+}
+
+/* Style the success message (h3) in green */
+h3 {
+  text-align: center;
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Style the form container (table) */
+table {
+  width: 95%; /* Increase the table width to 95% */
+  max-width: 500px; /* Set a maximum width */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 20px auto; /* Center the table and provide some spacing */
+  border: 1px solid #ccc; /* Add a subtle border */
+}
+
+/* Style the form input fields and labels */
+td {
+  padding: 10px;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+  background-color: #4caf50; /* Green color for the button background */
+  color: #fff; /* White text color for the button */
+  padding: 12px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Change the hover effect on the submit button */
+input[type="submit"]:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Center the form elements */
+td {
+  text-align: right;
+}
+
+/* Add spacing between form elements */
+td {
+  padding: 10px;
+}
+
+/* Center the success message and form */
+h3, table {
+  text-align: center;
+}

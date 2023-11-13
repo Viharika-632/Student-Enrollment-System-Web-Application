@@ -1,0 +1,55 @@
+{% extends 'adminnavbar.html' %}
+{% load static %}
+{% block content %}
+<link href="{% static 'css/addcourse.css' %}" rel="stylesheet">
+<form action="addstudent" method="POST">
+  {% csrf_token %}
+     <h2 align ="center">Add Student Data</h2>
+     <table align="center">
+     <tr>
+      <td>Student Name : </td>
+      <td><input type="text" name="txtName"></td>
+     </tr>
+     <tr>
+      <td>Student PhNo : </td>
+      <td><input type="text" name="txtPhno"></td>
+     </tr>
+     <tr>
+      <td>Student Email : </td>
+      <td><input type="email" name="txtMail"></td>
+     </tr>
+     <tr>
+      <td>StudentCity : </td>
+      <td><select name="ddlCity">
+          <option>---Select City Name----</option>
+            {% for i in CityData %}
+               <option>{{ i.city_name }}</option>
+            {% endfor %}
+           </select>
+      </td>
+     </tr>
+     <tr>
+      <td>Course : </td>
+      <td><select name="ddlCourse" id="ddlcourse">
+          <option>---Select Course Name---</option>
+           {% for i in CourseData %}
+               <option>{{ i.course_name }}</option>
+            {% endfor %}
+      </select></td>
+     </tr>
+     <tr>
+      <td>CourseFees : </td>
+      <td><input type="number" name="txtCourseFees" disabled></td>
+     </tr>
+     <tr>
+      <td>PaidFees : </td>
+      <td><input type="number" name="txtPaidFees" ></td>
+     </tr>
+      <tr>
+      <td align="center" colspan="2">
+        <input type="submit" name="btnRegister" value="AddStudent"></td>
+     </tr>
+
+  </table>
+</form>
+{% endblock %}

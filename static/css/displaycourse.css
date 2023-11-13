@@ -1,0 +1,46 @@
+/* This is a CSS file for styling the Course Details table */
+/* Comments start with /* and end with */ */
+
+/* Style for the entire table */
+table {
+    width: 80%; /* Set the table width to 80% of its container */
+    margin: 20px auto; /* Center the table horizontally with a 20px margin */
+    border-collapse: collapse; /* Collapse cell borders */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Add a box shadow for a subtle effect */
+}
+
+/* Style for table header cells (th) */
+th, td {
+    padding: 12px; /* Add padding to cells for spacing */
+    text-align: center; /* Center text in cells */
+}
+
+/* Style for table header cells (th) */
+th {
+    background-color: #333; /* Dark background color */
+    color: white; /* White text color */
+}
+
+/* Style for even rows */
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light background color for even rows */
+}
+
+/* Style for the h2 heading */
+h2 {
+    text-align: center; /* Center the text */
+}
+
+/* Style for links in table cells */
+a {
+    text-decoration: none; /* Remove underlines from links */
+    color: #007bff; /* Set link color to a primary blue color (#007bff) */
+}
+
+/* Style for images in table cells */
+img {
+    width: 30px; /* Set image width */
+    height: 20px; /* Set image height */
+}
+
+/* Additional styles for specific elements can be added as needed */

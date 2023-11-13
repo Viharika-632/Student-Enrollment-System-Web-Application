@@ -1,0 +1,89 @@
+/* Apply some basic styling to the body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh;
+  margin: 0;
+}
+
+/* Style the header (h1) for the registration page */
+h1 {
+  text-align: center;
+  color: #007bff; /* Blue color for the header text */
+  font-size: 28px;
+  margin-top: 20px;
+}
+
+/* Style the error message (h3) */
+h3 {
+  text-align: center;
+  color: red;
+}
+
+/* Style the form container (table) */
+table {
+  width: 200%; /* Adjust the width as needed */
+  max-width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Style the form input fields and labels */
+td {
+  padding: 5px;
+  text-align: right;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Style the register button */
+input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Change the hover effect on the register button */
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Style the "Create account" link */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Change the hover effect on the "Create account" link */
+a:hover {
+  text-decoration: underline;
+}
+
+/* Center the table and its content */
+table {
+  margin: 0 auto;
+}
+
+/* Add some spacing between the form elements */
+td {
+  padding: 8px 0;
+}

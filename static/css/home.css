@@ -1,0 +1,27 @@
+/* Apply styling to the body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa; /* Light gray background color */
+  color: #3c4043; /* Text color for the body */
+  margin: 0;
+  text-size-adjust: 100%;
+}
+
+/* Style the header (h2) for the home page */
+h2 {
+  text-align: center;
+  color: #1a73e8; /* Blue color for the header text */
+  font-size: 24px; /* Larger font size */
+  margin-top: 20px; /* Increased top margin */
+}
+
+/* Change the link color */
+a {
+  color: #1558d6; /* A different shade of blue for links */
+  text-decoration: none;
+}
+
+/* Change the hover effect on links */
+a:hover {
+  text-decoration: underline; /* Underline the link on hover */
+}

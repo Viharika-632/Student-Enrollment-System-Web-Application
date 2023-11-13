@@ -1,0 +1,28 @@
+{% extends 'adminnavbar.html' %}
+{% load static %}
+{% block content %}
+<h2 align="center">Update the Course Data</h2>
+<link href="{% static 'css/updatecourse.css' %}" rel="stylesheet">
+<form method="POST">
+  {% csrf_token %}
+  <table align="center">
+    <tr>
+      <td>CourseName : </td>
+      <td><input type="text" name="txtCourseName" value="{{data.course_name}}"></td>
+    </tr>
+    <tr>
+      <td>CourseDuration : </td>
+      <td><input type="text" name="txtCourseDuration" value="{{data.course_duration}}"></td>
+    </tr>
+    <tr>
+      <td>CourseFees : </td>
+      <td><input type="text" name="txtCourseFees" value="{{data.course_fees}}"></td>
+    </tr>
+    <tr>
+      <td align="center" colspan="2">
+        <input type="submit" name="btnSub" value="AddCourse">
+      </td>
+    </tr>
+  </table>
+</form>
+{% endblock %}
